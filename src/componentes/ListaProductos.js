@@ -2,9 +2,9 @@ import React, {Component} from "react";
 
 class ListaProductos extends Component{
 
-    clickLibro=(item)=>{
+    SelecProducto=(item)=>{
         const{agregarAlCarrito}=this.props
-        console.log('haciendo click en el libro..',item)
+        console.log('seleccionando el producto..',item)
 
         if(typeof agregarAlCarrito==='function'){
             agregarAlCarrito(item);  
@@ -22,8 +22,8 @@ class ListaProductos extends Component{
                      {Productos.map((item,index)=>{
 
                          return(
-                             <div onClick={()=>{this.clickLibro(item)}} key={index}>
-                                 {item.nombre} - {item.precio}
+                             <div onClick={()=>{this.SelecProducto(item)}} key={index}>
+                                 {item.nombre} - {item.Contenido} - {item.precio}
                                  </div>
 
                          )

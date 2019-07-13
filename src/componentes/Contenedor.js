@@ -24,7 +24,7 @@ class Contenedor extends Component{
             CarritoProductos:[]
         }
     }
-    escribiendo=(evento)=>{
+    buscando=(evento)=>{
         const lista=evento.target.value;
         this.filtrar(lista)
     }
@@ -60,7 +60,7 @@ class Contenedor extends Component{
                   
                <div style={{flex:1,backgroundColor:'orange'}}>
                <div>
-                    <input  onChange={this.escribiendo}/>
+                    <input  onChange={this.buscando}/>
                 </div>
 
                 <ListaProductos agregarAlCarrito={this.agregarAlCarrito} Productos={ProductosSuper} />
