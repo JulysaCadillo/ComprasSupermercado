@@ -54,11 +54,12 @@ class Contenedor extends Component{
         const{ProductosSuper,CarritoProductos, total}=this.state
         return(
          <div>
-                Comprar:
+                Realizar Compras:
             
             <div style={{display:'flex', flexDirection:'row',backgroundColor:'purple'}}>
                   
                <div style={{flex:1,backgroundColor:'orange'}}>
+                   Buscar Producto:
                <div>
                     <input  onChange={this.buscando}/>
                 </div>
